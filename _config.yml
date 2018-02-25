@@ -1,3 +1,12 @@
+-# Permalinks
+-#
+-# Use of `relative_permalinks` ensures post links from the index work properly.
+-permalink:          pretty
+
+gems:                [jekyll-paginate]
+paginate:            5
+paginate_path:       "page:num"
+
 # Setup
 title:               Lanyon
 tagline:             'A Jekyll theme'
