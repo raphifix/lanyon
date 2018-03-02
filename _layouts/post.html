@@ -1,10 +1,27 @@
 ---
 layout: default
+published: true
 ---
+
+<!-- Whitespace added for readability -->
+{% assign d = page.date | date: "%-d" %} 
+{% assign m = page.date | date: "%B" %}
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date: '%m/%-d/%Y' }}</span>
+  <span class="post-date">
+  {% case m %}
+  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+  {% when 'September' %}Sept.
+  {% else %}{{ page.date | date: "%b" }}.
+  {% endcase %}
+{% case d %}
+  {% when '1' or '21' or '31' %}{{ d }}st
+  {% when '2' or '22' %}{{ d }}nd
+  {% when '3' or '23' %}{{ d }}rd
+  {% else %}{{ d }}th
+  {% endcase %}, 
+{{ page.date | date: "%Y" }}</span>
   {{ content }}
 </div>
 
