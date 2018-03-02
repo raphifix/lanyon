@@ -4,17 +4,7 @@ published: true
 ---
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">
-<!-- Whitespace added for readability -->
-{% assign d = page.date | date: "%-d"  %}
-{{ page.date | date: "%B" }} 
-{% case d %}
-  {% when '1' or '21' or '31' %}{{ d }}st
-  {% when '2' or '22' %}{{ d }}nd
-  {% when '3' or '23' %}{{ d }}rd
-  {% else %}{{ d }}th
-  {% endcase %}, 
-{{ page.date | date: "%Y" }}
+  <span class="post-date">{{ post.date | date: "%-m/%-d/%Y" }}
 </div>
 
 <div class="related">
