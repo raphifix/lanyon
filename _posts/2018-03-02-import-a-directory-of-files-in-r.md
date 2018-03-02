@@ -3,7 +3,7 @@ published: true
 layout: post
 tags: R
 ---
-Here's a helper function to import a directory of files into R. If you want to import files matching a certain pattern, you can enter the pattern as an argument.
+Here's a helper function to import a directory of files into R. The function also allows you to import only files matching a certain pattern.
 
 ```r
 dir_to_df <- function(dir_path, pattern = NULL, verbose = TRUE){
