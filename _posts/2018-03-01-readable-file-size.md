@@ -1,5 +1,7 @@
 ---
 published: false
+layout: post
+tags: TIL terminal
 ---
 ## Getting Human-Readable File Sizes in the Terminal
 
