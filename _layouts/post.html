@@ -4,7 +4,7 @@ published: true
 ---
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ post.date | date: "%-m/%-d/%Y" }}</span>
+  <span class="post-date">{{ page.date | date: "%-m/%-d/%Y" }}</span>
 </div>
 
 <div class="related">
@@ -15,7 +15,7 @@ published: true
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date: '%m/%-d/%Y' }}</small>
+            <small>{{ page.date | date: "%-m/%-d/%Y" }}</small>
           </a>
         </h3>
       </li>
