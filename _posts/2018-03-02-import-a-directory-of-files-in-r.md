@@ -1,5 +1,7 @@
 ---
 published: false
+layout: post
+tags: R
 ---
 Here's a helper function to import a directory of files into R. If you want to import files matching a certain pattern, you can enter the pattern as an argument.
 
