@@ -12,7 +12,7 @@ But obviously this would be a chore to remember to do every time. Instead, we ch
 1. Create a folder in a directory that you have write permissions in. Make note of the path
 2. Go to `Control Panel > User Accounts > Change my environment variables`.
 3. Create a new user variable and name it `R_LIBS_USER`.
-4. Set the value to the path: `C:\my\library\folder`.
-5. Now press `OK` and restart RStudio if it's still open (or just restart the R session: `Session > Restart R`)
+4. Set the value to the path where you created the folder: `C:\my\library\folder`.
+5. Now press `OK` and restart R or RStudio.
 
 Voila!
