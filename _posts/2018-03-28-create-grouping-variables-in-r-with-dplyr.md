@@ -3,7 +3,7 @@ published: true
 layout: post
 tags: R TIL tidyverse
 ---
-I case across a new way to create a new variable with multiple groups in R using the `case_when` and `between` functions in dplyr.
+I came across a new way to create a variable with multiple groups in R using the `case_when` and `between` functions in dplyr.
 
 Today I was attempting to create a column indicating the quarter based on a month column. Traditionally, I would be tempted to use a series of nested `ifelse` functions with conditions specified using `<=` and `>=` operators, but that can get messy.
 
