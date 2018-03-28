@@ -5,7 +5,10 @@ I case across a new way to create a new variable with multiple groups in R using
 
 Today I was attempting to create a column indicating the quarter based on a month column. Traditionally, I would be tempted to use a series of nested `ifelse` functions, but that can get difficult to interpret fairly quickly.
 
-The syntax for 
+The syntax for `case_when` is pretty straightforward.
+
+`case_when(condition1 ~ 'group name 1', condition2 ~ 'group name 2')`
+
 
 I've included example syntax below. You can see how much more elegant the syntax is (as is the case for the "tidyverse" in general compared to base R).
 
