@@ -3,14 +3,17 @@ published: false
 ---
 I case across a new way to create a new variable with multiple groups in R using the `case_when` and `between` functions in dplyr.
 
-Today I was attempting to create a column indicating the quarter based on a month column. Traditionally, I would be tempted to use a series of nested `ifelse` functions, but that can get difficult to interpret fairly quickly.
+Today I was attempting to create a column indicating the quarter based on a month column. Traditionally, I would be tempted to use a series of nested `ifelse` functions with conditions specified using `<=` and `>=` operators, but that can get messy.
 
-The syntax for `case_when` is pretty straightforward.
+By comparison, the syntax for `case_when` is pretty straightforward:
 
 `case_when(condition1 ~ 'group name 1', condition2 ~ 'group name 2')`
 
+The `between` function is similarly easy to understand:
 
-I've included example syntax below. You can see how much more elegant the syntax is (as is the case for the "tidyverse" in general compared to base R).
+`between(x, lower bound inclusive, upper bound inclusive)`
+
+I've included example syntax using the two functions in concert. You can see how much more elegant the syntax is (as is the case for the "tidyverse" in general compared to base R).
 
 ```r
 mutate(df, month = as.numeric(format(week, '%m')),
