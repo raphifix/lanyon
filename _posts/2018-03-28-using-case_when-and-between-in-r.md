@@ -13,13 +13,14 @@ The `between` function is similarly easy to understand:
 
 `between(x, lower bound inclusive, upper bound inclusive)`
 
-I've included example syntax using the two functions in concert. You can see how much more elegant the syntax is (as is the case for the "tidyverse" in general compared to base R).
+I've included example syntax using the two functions in concert. You can see how elegant the syntax is (as is usually the case for tidyverse functions compared to base R).
 
 ```r
-mutate(df, month = as.numeric(format(week, '%m')),
-                quarter = case_when(
+mutate(df, quarter = case_when(
                   between(month, 1, 3) ~ "Q1",
                   between(month, 4, 6) ~ "Q2",
                   between(month, 7, 9) ~ "Q3",
-                  between(month, 10, 12) ~ "Q4")
+                  between(month, 10, 12) ~ "Q4"
+                )
+       )
 ```
