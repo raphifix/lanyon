@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: R TIL tidyverse
 ---
 I case across a new way to create a new variable with multiple groups in R using the `case_when` and `between` functions in dplyr.
 
