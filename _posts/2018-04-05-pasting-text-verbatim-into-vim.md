@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-tags: vim TIL
+tags: Vim TIL
 ---
 It is possible to paste directly into Vim without changing anything inside Vim, but it will auto-indent the text (which you may not want). Here's how to avoid this.
 
