@@ -1,5 +1,7 @@
 ---
 published: false
+layout: post
+tags: Vim TIL
 ---
 To delete multiple lines in Vim, first enter command mode by pressing `Esc`.
 
