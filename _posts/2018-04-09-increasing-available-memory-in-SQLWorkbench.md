@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: SQL terminal TIL
 ---
 Every now and then I need to select a large number of rows from a database. Occasionally the amount of memory necessary will outstrip the amount allocated by the underlying JVM. We can get around this by launching SQLWorkbench from the commandline with an argument specifying the amount of RAM we want to allocate.
 
