@@ -3,7 +3,7 @@ published: true
 layout: post
 tags: R Shiny terminal TIL
 ---
-I was helping my mother with a copywriting project that required extracting specific tag from 200+ pages on a particular website. I was able to quickly whip up an in R using Shiny, but due to certain restrictions, I couldn't host the app online. Instead, I installed R and RStudio on her machine and showed her how to launch the app.
+I was helping my mother with a copywriting project that required extracting specific tags from 200+ pages on a particular website. I was able to quickly whip up an in R using Shiny, but due to certain restrictions, I couldn't host the app online. Instead, I installed R and RStudio on her machine and showed her how to launch the app.
 
 To make things easier, I decided to create a desktop shortcut to the app so she could avoid having to load RStudio and manually launch the app every time she needed it.
 
