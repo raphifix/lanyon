@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: R Shiny terminal TIL
 ---
 I was helping my mother with a copywriting project that required extracting specific tag from 200+ pages on a particular website. I was able to quickly whip up an in R using Shiny, but due to certain restrictions, I couldn't host the app online. Instead, I installed R and RStudio on her machine and showed her how to launch the app.
 
