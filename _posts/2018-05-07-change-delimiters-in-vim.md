@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: terminal TIL Vim
 ---
 I was working with a coworker to change the delimiter in a very large dataset on an EC2 instance. Vim made this a very painless process using the [substitute](http://vim.wikia.com/wiki/Search_and_replace) command.
 
