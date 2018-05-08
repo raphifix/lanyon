@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-tags: r TIL
+tags: R TIL
 ---
 Sometimes when diagnosing problems in a `for` loop or just trying to keep track of progress, it can be helpful to print the iterator as the loop progresses. It can be annoying (especially for longer loops) for each iteration to be given its own line.
 
