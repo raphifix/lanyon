@@ -9,6 +9,6 @@ We can rectify this by by wiping the line clean each time. Here's how we can do 
 
 ```r
 for(i in 1:10){
-cat("\r", i)
+   cat("\r", i)
 }
 ```
