@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: Git terminal TIL
 ---
 I was finishing up work on a feature addition to an internal R package and was ready to merge to branch into the mainline. I submitted my pull request to my manager, who approved it. Now for the nerve-wracking part: actually merging the branch!
 
