@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: Python TIL
 ---
 It is straight-forward to access to last element of a list in Python.
 
