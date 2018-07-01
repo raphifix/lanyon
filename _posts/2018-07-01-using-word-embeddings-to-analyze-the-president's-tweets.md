@@ -1,7 +1,7 @@
 ---
 published: false
 ---
-- introduction/motivation
+- Introduction/Motivation
 - data cleaning in r
 - model running from command line
 - examples
