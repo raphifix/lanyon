@@ -19,6 +19,23 @@ This is a very high-level description of these methods. If you're interested in 
 Both approaches involve a single-layer neural network to calculate the word vectors. Unlike in other neural net setups where the output layers is the layer of interest, the weights in the _hidden layer_ instead represent the embedded space.
 
 - data cleaning in r
+
+Getting the President's tweets was fairly straightforward thanks to the [Trump Twitter Archive](http://www.trumptwitterarchive.com/archive). I used a pipe delimiter to avoid conflicts within the tweets.
+
+I decided to stick to basic text preprocessing for this task:
+1.Removing punctuation
+2.Lemmatizing the strings: converting all words to their base form. E.g. is, am, are -> be
+3.Removing stop words: common words that typically do not add any information to text analytics tasks
+
+```{r}
+library(textstem)
+library(qdap)
+
+trump_tweets <- read.csv('~/Documents/trump_tweets.txt', sep = '|', quote = "", row.names = NULL, stringsAsFactors = F)
+trump_tweets$text <- gsub('[[:punct:] ]+',' ',trump_tweets$text)
+trump_tweets$text <- lemmatize_strings(trump_tweets$text)
+trump_tweets$text <- rm_stopwords(trump_tweets$text, separate = FALSE)
+```
 - model running from command line
 - examples
 - further exploration
