@@ -16,7 +16,7 @@ Two popular models for building word vectors are continuous bag of words (CBOW) 
 
 This is a very high-level description of these methods. If you're interested in learning more about these and other methods for building word embeddings, [here](https://lilianweng.github.io/lil-log/2017/10/15/learning-word-embedding.html) is a good place to start.
 
-Both approaches involve a single-layer neural network to calculate the word vectors. Although you might think the output layer of the network would be the word vector, this it not the case. Instead, the weights in the hidden layer represent the embedded space. Neat!
+Both approaches involve a single-layer neural network to calculate the word vectors. Unlike in other neural net setups where the output layers is the layer of interest, the weights in the _hidden layer_ instead represent the embedded space.
 
 - data cleaning in r
 - model running from command line
