@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: R TIL
 ---
 The family of apply functions (including sapply, lapply, etc) allow for some pretty powerful data manipulation in R. Today I was able to use `sapply` to quickly solve a problem without using a loop.
 
