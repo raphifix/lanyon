@@ -9,6 +9,6 @@ One of the files I'm using for a project contains time ordered data. Instead of 
 
 First, I split each row on ` - ` using the `strsplit` function. This returned a list, with each list element containing a character vector containg the start and end dates. But how do we extract just the first element?
 
-That's where the apply functions come in. We'll use `sapply`, which can return a vactor, matrix, or array depending on the user's preference. The final call looks like this: ``` sapply(strsplit(npd_footwear$week, ' - '), `[[`, 1) ```
+That's where the apply functions come in. We'll use `sapply`, which can return a vactor, matrix, or array depending on the user's preference. The final call looks like this: ``` sapply(strsplit(df$date, ' - '), `[[`, 1) ```
 
-So what's going on here? Well, the inner function `strsplit(npd_footwear$week, ' - ')` does the date splitting. The `sapply` takes the list that `strsplit` returns and passes 2 arguments: ``` `[[` ``` and `1`, shorthand for `function(x) x[1]`. This is what tells sapply to extract the first element from each list element, which is a vector.
+So what's going on here? Well, the inner function `strsplit(df$date, ' - ')` does the date splitting. The `sapply` takes the list that `strsplit` returns and passes 2 arguments: ``` `[[` ``` and `1`, shorthand for `function(x) x[1]`. This is what tells sapply to extract the first element from each list element, which is a vector.
