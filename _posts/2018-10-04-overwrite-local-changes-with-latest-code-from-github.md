@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: Git TIL
 ---
 Today I was experimenting with some changes to a codebase I had recently updated in Github. I was reaching a deadend and decided to go ahead and overwrite the local changes with the latest code from Github. However, using `git pull` and `git fetch` did not work. I was still looking at my locally modified code.
 
