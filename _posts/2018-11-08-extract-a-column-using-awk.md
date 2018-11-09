@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+tags: Awk terminal TIL
 ---
 Awk makes it easy to extract a column in a csv or text file. Here's an example:
 
